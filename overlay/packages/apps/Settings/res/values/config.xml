@@ -23,5 +23,6 @@
     <bool name="config_show_min_refresh_rate_switch">true</bool>
     
     <!-- Lineage-Ext maintainer -->
-    <string name="maintainer_name">AshraySingh</string>
+    <string name="maintainer_name">Anti_MiUi</string>
+    <string name="ext_settings_summary">Mi 11x Pro/Redmi K40 Pro</string>
 </resources>
