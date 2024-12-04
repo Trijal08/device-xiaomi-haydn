@@ -23,6 +23,6 @@
     <bool name="config_show_min_refresh_rate_switch">true</bool>
     
         <!-- DerpFest maintainer -->
-    <string name="maintainer_name">AntiMiUi</string>
-    <string name="maintainer_telegram">https://t.me/Anti_MiUi</string>
+    <string name="maintainer_name">Asim</string>
+    <string name="maintainer_telegram">https://t.me/asim_playz</string>
 </resources>

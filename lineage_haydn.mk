@@ -11,17 +11,26 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from haydn device
 $(call inherit-product, device/xiaomi/haydn/device.mk)
 
-# Inherit some common Derpfest stuff.
-$(call inherit-product, vendor/derp/config/common_full_phone.mk)
+# Inherit some common EvolutionX stuff.
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := haydn
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_MODEL := M2012K11G
-PRODUCT_NAME := derp_haydn
+PRODUCT_NAME := lineage_haydn
 
 PRODUCT_SYSTEM_NAME := haydn_global
 PRODUCT_SYSTEM_DEVICE := haydn
+
+# Inherit some common Evolution X stuff.
+BUILD_WITH_GAPPS := true
+TARGET_BOOT_ANIMATION_RES := 1440
+TARGET_BUILD_APERTURE_CAMERA := false
+TARGET_SUPPORTS_QUICK_TAP := true
+
+# Build Type Flags
+EVO_BUILD_TYPE = DEVELOPMENT
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildDesc=$(call normalize-path-list, "haydn_global-user 14 UKQ1.231207.002 V816.0.2.0.UKKMIXM release-keys") \
