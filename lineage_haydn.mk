@@ -11,8 +11,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from haydn device
 $(call inherit-product, device/xiaomi/haydn/device.mk)
 
-# Inherit some common Derpfest stuff.
-$(call inherit-product, vendor/derp/config/common_full_phone.mk)
+# Inherit some common CrDroid stuff.
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+
+# crDroid
+TARGET_BOOT_ANIMATION_RES := 1080
 
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := haydn
