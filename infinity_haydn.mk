@@ -11,17 +11,26 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from haydn device
 $(call inherit-product, device/xiaomi/haydn/device.mk)
 
-# Inherit some common PixelOS stuff.
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+# Inherit some common InfinityX stuff.
+$(call inherit-product, vendor/infinity/config/common_full_phone.mk)
 
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := haydn
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_MODEL := M2012K11G
-PRODUCT_NAME := aosp_haydn
+PRODUCT_NAME := infinity_haydn
 
-# PixelOS
-TARGET_BOOT_ANIMATION_RES := 1080
+# InfinityX
+INFINITY_BUILD_TYPE := UNOFFICIAL
+INFINITY_MAINTAINER := Asim
+TARGET_SUPPORTS_BLUR := true
+WITH_GAPPS := true
+TARGET_SHIPS_FULL_GAPPS := true
+TARGET_BUILD_GOOGLE_TELEPHONY := true
+USE_MOTO_CALCULATOR := true
+
+# Bootanimation
+TARGET_BOOT_ANIMATION_RES := 1080\
 
 PRODUCT_SYSTEM_NAME := haydn_global
 PRODUCT_SYSTEM_DEVICE := haydn
