@@ -27,7 +27,7 @@ git clone --depth=1 https://gitlab.com/Alucard_Storm/haydn-miuicamera.git -b fou
 
 # Dolby
 rm -rf hardware/xiaomi/dolby
-git clone https://github.com/1xtAsh/hardware_dolby -b A15 hardware/dolby
+git clone https://github.com/Asimplayz1/hardware_dolby -b Sony-15 hardware/dolby
 
 # Bcr
 rm -rf vendor/bcr
@@ -37,9 +37,5 @@ git clone https://github.com/Chaitanyakm/vendor_bcr -b main vendor/bcr
 rm -rf hardware/xiaomi/megvii
 rm -rf hardware/xiaomi
 git clone https://github.com/LineageOS/android_hardware_xiaomi -b lineage-21 hardware/xiaomi
-
-#Signing Build
-rm -rf vendor/lineage-priv/keys 
-git clone https://github.com/1xtAsh/vendor_lineage-priv_keys -b lineage-21 vendor/lineage-priv/keys
 
 echo 'delete vendorsetup.sh from device tree once this is done'
